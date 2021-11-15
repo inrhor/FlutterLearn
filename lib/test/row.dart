@@ -15,7 +15,12 @@ class _SectionState extends State<Section> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: titleSection(),
+      // 横向
+      body: Column(
+        children: [
+          titleSection()
+        ],
+      )
     );
   }
 
@@ -25,6 +30,7 @@ class _SectionState extends State<Section> {
   Widget titleSection() => Container(
     // 从初始位置开始（默认左上角），对四周增加 32 像素
     padding: const EdgeInsets.all(32),
+    // 纵向
     child: Row(
       children: [
         Expanded(
