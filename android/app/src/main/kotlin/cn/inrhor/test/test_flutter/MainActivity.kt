@@ -1,0 +1,6 @@
+package cn.inrhor.test.test_flutter
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
